@@ -6,7 +6,7 @@ hi this is snapp code challenge
 4. Run !
 
 just 1 service has test because the project is small and there is no unit to work with.
-maybe some part of layers are same. this is all beacause of size of projects
+maybe some part of layers are same. this is all beacause of size of project
 but I seperate them to differentiate. whenever it grows layers will show them selves :)
 
  
