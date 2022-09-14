@@ -25,5 +25,4 @@ func main() {
 	pc.RegisterRoutes(&r.RouterGroup)
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	confs.RunGin(r)
-
 }
