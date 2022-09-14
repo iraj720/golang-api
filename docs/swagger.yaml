@@ -1,0 +1,83 @@
+definitions:
+  api.product:
+    properties:
+      id:
+        description: |-
+          example: 1
+          required: false
+        type: integer
+      name:
+        description: |-
+          The name of product
+          example: TV
+          required: false
+        type: string
+      point:
+        description: |-
+          The value for a vote point
+          example: 6.5
+          required: true
+        type: number
+    type: object
+info:
+  contact: {}
+paths:
+  /bulky-vote:
+    post:
+      description: you can vote with id or name (every porduct that matches that conditions
+        will consider your point)
+      operationId: bulkyVote
+      parameters:
+      - description: The body to create a vote
+        in: body
+        name: Body
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/api.product'
+          type: array
+      responses: {}
+      summary: This is for voting
+      tags:
+      - bulkyVote
+  /filter:
+    post:
+      description: you can get product with id or name
+      operationId: filter
+      parameters:
+      - description: filter products
+        in: body
+        name: Body
+        required: true
+        schema:
+          $ref: '#/definitions/api.product'
+      responses: {}
+      summary: This is for filtering
+      tags:
+      - filter
+  /get-all:
+    get:
+      description: you can vote with id or name (every porduct that matches that conditions
+        will consider your point)
+      operationId: get-all
+      responses: {}
+      summary: This is for voting
+      tags:
+      - get-all
+  /vote:
+    post:
+      description: you can vote with id or name (every porduct that matches that conditions
+        will consider your point)
+      operationId: vote
+      parameters:
+      - description: The body to create a vote
+        in: body
+        name: Body
+        required: true
+        schema:
+          $ref: '#/definitions/api.product'
+      responses: {}
+      summary: This is for voting
+      tags:
+      - vote
+swagger: "2.0"

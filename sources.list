@@ -1,0 +1,7 @@
+export HOST_ADDR="localhost"
+export HOST_PORT="1234"
+export DB_HOST="172.29.246.124"
+export DB_PORT="5432"
+export DB_USER="root"
+export DB_PASSWORD="123"
+export DB_NAME="postgres"

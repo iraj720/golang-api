@@ -1,0 +1,9 @@
+GOPATH:=$(shell go env GOPATH)
+
+APP_NAME:=$(snapp)
+
+.PHONY: swagger
+swagger:
+	rm -rf ./docs 
+	swag init -g ./api/productController/product-controller.go
+	
