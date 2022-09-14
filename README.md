@@ -5,8 +5,8 @@ hi this is snapp code challenge
 3. open http://localhost:1234/swagger/index.html for swagger 
 4. Run !
 
-just 1 service has test because the project is small and there is no unit to work with
-maybe some part of layers are same this is all beacause of size of projects
+just 1 service has test because the project is small and there is no unit to work with.
+maybe some part of layers are same. this is all beacause of size of projects
 but I seperate them to differentiate. whenever it grows layers will show them selves :)
 
  
